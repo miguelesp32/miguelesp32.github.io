@@ -1,16 +1,16 @@
 /* =========================================
    VARIABLES Y RESET
-   ========================================= */
+========================================= */
 :root {
     /* Paleta de Colores Profesional */
-    --color-primary: #0A192F;       /* Azul Navy Profundo (Fondos oscuros) */
-    --color-secondary: #112240;     /* Azul Navy Claro (Tarjetas oscuras) */
-    --color-accent: #00B4D8;        /* Azul Cian Eléctrico (Botones, acentos) */
-    --color-accent-hover: #0096C7;  /* Cian oscuro para hover */
-    --color-text-dark: #1C2541;     /* Texto principal sobre blanco */
-    --color-text-light: #8892B0;    /* Texto secundario sobre oscuro */
-    --color-white: #E6F1FF;         /* Blanco suave */
-    --color-bg-light: #F8F9FA;      /* Fondo claro para secciones alternas */
+    --color-primary: #0A192F;
+    --color-secondary: #112240;
+    --color-accent: #00B4D8;
+    --color-accent-hover: #0096C7;
+    --color-text-dark: #1C2541;
+    --color-text-light: #8892B0;
+    --color-white: #E6F1FF;
+    --color-bg-light: #F8F9FA;
     
     /* Tipografía */
     --font-main: 'Inter', sans-serif;
@@ -42,7 +42,7 @@ body {
 
 /* =========================================
    UTILIDADES
-   ========================================= */
+========================================= */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -81,7 +81,7 @@ body {
 
 /* =========================================
    BOTONES
-   ========================================= */
+========================================= */
 .btn {
     display: inline-block;
     padding: 12px 28px;
@@ -133,7 +133,7 @@ body {
 
 /* =========================================
    HEADER & NAV
-   ========================================= */
+========================================= */
 .header {
     position: fixed;
     top: 0;
@@ -193,7 +193,7 @@ body {
 
 /* =========================================
    HERO SECTION
-   ========================================= */
+========================================= */
 .hero {
     position: relative;
     height: 100vh;
@@ -240,7 +240,7 @@ body {
 
 /* =========================================
    FEATURES SECTION
-   ========================================= */
+========================================= */
 .section-header {
     text-align: center;
     margin-bottom: 60px;
@@ -305,7 +305,7 @@ body {
 
 /* =========================================
    PLANS SECTION
-   ========================================= */
+========================================= */
 .plans-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -428,7 +428,7 @@ body {
 
 /* =========================================
    COVERAGE SECTION
-   ========================================= */
+========================================= */
 .coverage-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -491,7 +491,7 @@ body {
 
 /* =========================================
    CONTACT SECTION
-   ========================================= */
+========================================= */
 .contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
@@ -575,7 +575,7 @@ body {
 
 /* =========================================
    FOOTER
-   ========================================= */
+========================================= */
 .footer {
     background-color: #050D1A;
     color: var(--color-text-light);
@@ -669,7 +669,7 @@ body {
 
 /* =========================================
    WHATSAPP FLOAT
-   ========================================= */
+========================================= */
 .whatsapp-float {
     position: fixed;
     bottom: 30px;
@@ -694,7 +694,7 @@ body {
 
 /* =========================================
    ANIMACIONES (Scroll)
-   ========================================= */
+========================================= */
 .fade-in {
     opacity: 0;
     transform: translateY(30px);
@@ -708,7 +708,7 @@ body {
 
 /* =========================================
    RESPONSIVE DESIGN
-   ========================================= */
+========================================= */
 @media (max-width: 992px) {
     .hero h1 { font-size: 2.8rem; }
     .coverage-wrapper, .contact-wrapper { grid-template-columns: 1fr; }
