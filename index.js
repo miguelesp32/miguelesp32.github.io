@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
     /* =========================================
        1. MENÚ MÓVIL (Hamburguesa)
        ========================================= */
@@ -31,13 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.remove('fa-times');
             icon.classList.add('fa-bars');
         });
-        });
+    });
 
     /* =========================================
        2. HEADER CON EFECTO AL HACER SCROLL
        ========================================= */
     const header = document.getElementById('header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY >= 50) {
             header.style.boxShadow = "0 4px 20px rgba(0, 0, 0, 0.1)";
@@ -54,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fadeElements = document.querySelectorAll('.fade-in');
 
     const appearOptions = {
-        threshold: 0.15, // El elemento debe ser 15% visible para activarse
+        threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
     };
 
@@ -64,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             } else {
                 entry.target.classList.add('visible');
-                appearOnScroll.unobserve(entry.target); // Dejar de observar una vez animado
+                appearOnScroll.unobserve(entry.target);
             }
         });
     }, appearOptions);
@@ -80,9 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página se recargue
+            e.preventDefault();
 
-            // Simulación de envío de datos (Aquí conectarías con tu backend o servicio como EmailJS/Formspree)
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.innerText;
             
@@ -91,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.style.opacity = '0.7';
 
             setTimeout(() => {
-                alert('¡Gracias por contactar a SYDAMI FIBER! Un asesor se comunicará contigo en menos de24 horas para confirmar tu cobertura.');
+                alert('¡Gracias por contactar a SYDAMI FIBER! Un asesor se comunicará contigo en menos de 24 horas para confirmar tu cobertura.');
                 contactForm.reset();
                 submitBtn.innerText = originalText;
                 submitBtn.disabled = false;
